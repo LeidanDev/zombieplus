@@ -8,9 +8,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+<<<<<<< HEAD
     "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.9.1",
     "pg": "^8.21.0"
+=======
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1"
+>>>>>>> cf5e49ed114f8a79291f94a5c342330ce5d4c1ae
   }
 }
