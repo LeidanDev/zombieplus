@@ -7,13 +7,14 @@ export class Login {
     }
 
     async do(email, password, username){
-        this.visit()
-        this.submit(email, password)
-        this.isLoggedIn(username)
+     await this.visit()
+     await this.submit(email, password)
+     await this.isLoggedIn(username)
+     
     }
 
     async visit() {
-        await this.page.goto('http://localhost:3000/admin/login')
+        await this.page.goto('/admin/login')
 
         const loginForm = this.page.locator('.login-form')
         await expect(loginForm).toBeVisible()
